@@ -23,6 +23,13 @@ nav,a{
 }
 
 video{
-  width: 60%;
-  margin: 2%  20% 0%  ;
+  /* width: 60%;
+  margin: 2%  20% 0%  ; */
+  /* width: 100%; */
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%
+  width:auto;
+  height: auto;
+  z-index: -100;
 }
