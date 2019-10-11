@@ -1,0 +1,215 @@
+/*header*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menubar {
+    padding-top: 0px;
+    background-color: #001b34;
+    opacity: 0.8;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    height: 48px;
+    width: auto;
+}
+
+.menu > li {
+    width: 25%;
+}
+
+.menu li {
+    list-style: none;
+    position: relative;
+}
+
+.menu li a {
+    background: #001b34;
+    border-left:  1px solid #eee;
+    color: #fff;
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+/*プルダウン*/
+.menu li li {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity .5s;
+}
+
+.menu li li a {
+    border-top: 1px solid #eee;
+}
+
+.menu li:hover > ul > li {
+    height: 48px;
+    opacity: 1;
+    overflow: visible;
+}
+
+.menu li ul li ul {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/*カーソルホバー↓*/
+.menu > li:hover > a {/*HOMEとMemberにマウスホバーした時の色*/
+    background: #00305c;
+}
+
+.menu > li li > a {/*３人の名前*/
+    background: #00305c;
+}
+.menu > li li:hover > a {/*３人の名前にカーソルを当てた時の色*/
+    background: #004789;
+}
+
+/*Memberの横に「▼」を付ける*/
+.menu > li > ul:before{
+    border: 7px solid transparent;
+    border-top: 9px solid #fff;
+    content: "";
+    right: 48px;
+    position: absolute;
+    top: 26px;
+    transform: translateY(-40%);
+}
+
+/*HOME*/
+
+video {
+  /* width: 60%;
+  margin: 2%  20% 0%  ; */
+  /* width: 100%; */
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%
+  width:auto;
+  height: auto;
+  z-index: -100;
+}
+
+
+/*member*/
+
+body {
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+.container {
+  width: 820px;
+  margin: 0 auto;
+  padding: 45px 0 0 0;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 60px;
+  margin-top: 0;
+}
+
+.section-title::after {
+  content: attr(data-subtitle);
+  display: block;
+  font-size: 16px;
+  color: #aaa;
+  padding-top: 10px;
+}
+
+.member .flex {
+  display: flex;
+  justify-content: center;
+}
+
+.picture .name {
+  font-size: 24px;
+  font-family: Verdana, sans-serif;
+  color: #001b34;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: normal;
+}
+
+.picture {
+  margin: 0 33px;
+}
+
+.picture img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  box-shadow: 0 0 2px #001b34; /*通常立ち絵の影を入れる */
+  border-radius: 10px;
+/* -webkit-border-radius: 20px;
+-moz-border-radius: 20px; */
+}
+
+.picture:hover img {
+  opacity: 1;
+  -webkit-animation: flash 1.3s;
+  animation: flash 1.3s;
+  -webkit-transform: scale(1.03);
+transform: scale(1.03);
+  box-shadow: 0 0 10px black;
+}
+@-webkit-keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.f-container{
+  display: flex;
+  margin-top: 50px;
+  margin-left:  50px;
+  margin-right: 1px;
+  border-radius: 20px;
+  flex-wrap: wrap;
+}
+
+.fleximg1{
+  margin-top: 50px;
+  margin-left: 50px;
+  border-radius: 20px;
+
+}
+
+.fleximg2{
+ margin-left: 96px;
+ border-radius: 20px;
+}
+
+.nested-items{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}

@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <title>HOME</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>HOME</title>
+  <!-- <link rel="icon" href="favicon.ico"> -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
   <body>
     <header>
-      <nav>
-          <a href="#">Home</a>
-          <a href="member.html">Member</a>
-      </nav>
+      <div class="menubar">
+          <ul class="menu">
+              <li>
+                <a href="index.html">HOME</a>
+              </li>
+                <li>
+                 <a href="member.html">Member</a>
+                  <ul>
+                      <li><a href="">Takumi Seitoh</a></li>
+                      <li><a href="">Itei Sai</a></li>
+                      <li><a href="">Kohichi Hoshikawa</a></li>
+                  </ul>
+                </li>
+          </ul>
+      </div>
     </header>
-    <video src="SOHO1.mp4" autoplay muted></video>
+    <!-- <iframe src="https://raw.githubusercontent.com/anars/blank-audio/master/500-milliseconds-of-silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe> -->
+
+    <video src="video/soho.home.mp4" autoplay muted loop></video>
   </body>
 </html>
