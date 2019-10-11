@@ -107,7 +107,7 @@ video {
 
 /*member*/
 
-body {
+body.top {
   font-size: 16px;
   font-family: Verdana, sans-serif;
   color: #333;
@@ -191,29 +191,41 @@ transform: scale(1.03);
   }
 }
 
-.f-container{
+#wrap {
   display: flex;
-  margin-top: 50px;
-  margin-left:  50px;
-  margin-right: 1px;
-  border-radius: 20px;
+  width: 100vw;
+  height: auto;
   flex-wrap: wrap;
-}
-
-.fleximg1{
   margin-top: 50px;
   margin-left: 50px;
-  border-radius: 20px;
+}
+
+.item1 {
+  width: 302px;
+  border-radius: 10px;
+}
+
+.item2{
+  width: 70%;
+/* Modified */
+height: 24.5vw;
+background: #ffffff;
+margin-bottom: 10px;
+}
+
+.item3 {
+  /* width: 10%;
+    height: 10vw; */
+    background: #555555;
+    margin-right: 10px;
 
 }
 
-.fleximg2{
- margin-left: 96px;
- border-radius: 20px;
+.item4{
+  margin-left: 92px;
 }
 
-.nested-items{
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
+.item3, .item4{
+  border-radius: 10px;
+  margin-top: 20px;
 }
