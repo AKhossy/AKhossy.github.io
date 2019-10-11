@@ -96,9 +96,9 @@ video {
   position: fixed;
   min-width: 100%;
   min-height: 100%
-  width:auto;
+  /* width:auto;
   height: auto;
-  z-index: -100;
+  z-index: -100; */
 }
 
 
