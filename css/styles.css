@@ -218,14 +218,15 @@ margin-bottom: 10px;
     height: 10vw; */
     background: #555555;
     margin-right: 10px;
+    margin-left: 50px;
 
 }
 
-/* .item4{
-  margin-left: 92px;
+.item4{
+  margin-left: 87px;
 }
 
 .item3, .item4{
   border-radius: 10px;
   margin-top: 20px;
-} */
+}
