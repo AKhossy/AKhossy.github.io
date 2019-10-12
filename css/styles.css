@@ -209,7 +209,7 @@ transform: scale(1.03);
 }
 
 .item2{
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .item3{
@@ -243,5 +243,7 @@ transform: scale(1.03);
 }
 
 .kyomu{
-  margin-top:  100px;
+  display: block;
+padding-top: 10px;
+margin-top: -10px;
 }
