@@ -193,7 +193,7 @@ transform: scale(1.03);
 
 #wrap {
   display: flex;
-  width: 100vw;
+  /* width: 100vw; */
   height: auto;
   flex-wrap: wrap;
   margin-top: 50px;
@@ -206,7 +206,7 @@ transform: scale(1.03);
 }
 
 .item2{
-  width: 70%;
+  width: 40%;
 /* Modified */
 height: 24.5vw;
 background: #ffffff;
