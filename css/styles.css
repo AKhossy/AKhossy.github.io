@@ -209,7 +209,7 @@ transform: scale(1.03);
 }
 
 .item2{
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .item3{
@@ -240,4 +240,8 @@ transform: scale(1.03);
 .email{
   margin-top: 150px;
   text-align: center;
+}
+
+.kyomu{
+  margin-top: : 75px;
 }
