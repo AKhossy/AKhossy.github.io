@@ -238,3 +238,21 @@ margin-top: -10px;
 .bottom{
   padding-top: 200px;
 }
+
+
+.textbody{
+  position: relative;
+  left:  30px;
+}
+
+.langbody{
+  position: relative;
+  left: 30px;
+  float: left;
+}
+
+.skillbody{
+  position: relative;
+  left:  50px;
+
+}
